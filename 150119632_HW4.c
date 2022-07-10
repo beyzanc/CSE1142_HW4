@@ -1,4 +1,4 @@
-// Beyzanur Çabuk - 150119632
+// Beyzanur Ã‡abuk - 150119632
 // This program aims to suggest a route to go from a starting point to a destination point on a metro line using the shortest distance.
 
 #include <stdio.h>
@@ -10,28 +10,23 @@
 
 
 typedef struct {
-
     char name[20];
     double x;
     double y;
-
 } MetroStation;
 
 
 typedef struct {
-
     char color[20];
     MetroStation MetroStations[SIZE];
-
 } MetroLine;
 
 
 typedef struct {
-
     char name[20];
     MetroLine MetroLines[SIZE];
-
 } MetroSystem;
+
 
 int equals(MetroStation s1, MetroStation s2){   // checks if two stations given as parameters are with same name properties.
 
@@ -63,7 +58,6 @@ int hasStation(MetroLine mLine, MetroStation mStation){ // checks if the station
 
  				printf("Station %s is in %s line.   //  ",mStation.name,mLine.color);
  				return 1;
-
  			}
 
  			else{
